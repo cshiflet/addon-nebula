@@ -1,0 +1,14 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: Nebula
+# Runs Nebula
+# ==============================================================================
+readonly config='/etc/nebula/config.yml'
+declare -a options
+
+bashio::log.info "Starting Nebula..."
+
+options+=("-config ${config}")
+
+# Run the Nebula
+exec nebula "${options[@]}"

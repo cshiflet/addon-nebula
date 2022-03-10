@@ -1,15 +1,15 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: ZeroTier One
-# Runs ZeroTier One
+# Home Assistant Community Add-on: nebula
+# Runs nebula
 # ==============================================================================
 declare -a options
 
-bashio::log.info "Starting ZeroTier One..."
+bashio::log.info "Starting nebula..."
 
 # Note sure what this does.
 options+=(-U)
 options+=("-p$(bashio::addon.port 9993)")
 
-# Run the ZeroTier One
-exec zerotier-one "${options[@]}"
+# Run nebula
+exec nebula "${options[@]}"

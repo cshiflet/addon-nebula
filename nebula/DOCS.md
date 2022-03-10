@@ -1,10 +1,10 @@
-# Home Assistant Community Add-on: ZeroTier One
+# Home Assistant Community Add-on: Nebula
 
-[ZeroTier][zerotier] delivers the capabilities of VPNs, SDN, and SD-WAN with
+[Nebula][Nebula] delivers the capabilities of VPNs, SDN, and SD-WAN with
 a single system. Manage all your connected resources across both local
 and wide area networks as if the whole world is a single data center.
 
-People use ZeroTier to seamlessly connect laptops, desktops, phones,
+People use Nebula to seamlessly connect laptops, desktops, phones,
 embedded devices, cloud resources, and apps any way they want anywhere they go.
 It transforms the entire world into a single data center, to which you
 can now add your Home Assistant instance using this add-on.
@@ -20,11 +20,11 @@ comparison to installing any other Home Assistant add-on.
    [![Open this add-on in your Home Assistant instance.][addon-badge]][addon]
 
 1. Click the "Install" button to install the add-on.
-1. Create a free account at [zerotier.com][zerotier] and get a network ID.
+1. Create a free account at [Nebula.com][Nebula] and get a network ID.
 1. Set the "network_id" add-on option with your network ID.
-1. Start the "ZeroTier One" add-on
-1. Check the logs of the "ZeroTier One" add-on to see if everything went well.
-1. The instance will show up in your ZeroTier account.
+1. Start the "Nebula" add-on
+1. Check the logs of the "Nebula" add-on to see if everything went well.
+1. The instance will show up in your Nebula account.
 
 Home Assistant, by default, ships with the Community Add-ons store installed.
 However, if it is missing (for any reason), you can add it by clicking the
@@ -68,22 +68,22 @@ you are troubleshooting.
 ### Option: `networks`
 
 Configures one or more network identifiers of the networks (VLAN) to join.
-You can find this number in your ZeroTier account.
+You can find this number in your Nebula account.
 
-**Note**: _This option support secrets, e.g., `!secret zerotier_network_id`._
+**Note**: _This option support secrets, e.g., `!secret Nebula_network_id`._
 
 ### Option: `api_auth_token`
 
-ZeroTier exposes a local HTTP JSON API, which uses the port set using the
-`port` option above. It allows tools and programs to access this ZeroTier
+Nebula exposes a local HTTP JSON API, which uses the port set using the
+`port` option above. It allows tools and programs to access this Nebula
 instance for quering data (or control it).
 
 This token is like a password for accessing that API, you can leave this
 option empty if you are not planning on using this feature.
 
-For more information on the ZeroTier JSON API, [check their documentation][api].
+For more information on the Nebula JSON API, [check their documentation][api].
 
-**Note**: _This option support secrets, e.g., `!secret zerotier_token`._
+**Note**: _This option support secrets, e.g., `!secret nebula_token`._
 
 ## Changelog & Releases
 
@@ -145,17 +145,17 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [addon-badge]: https://my.home-assistant.io/badges/supervisor_addon.svg
-[addon]: https://my.home-assistant.io/redirect/supervisor_addon/?addon=a0d7b954_zerotier
-[api]: https://www.zerotier.com/manual.shtml#4_1
-[contributors]: https://github.com/hassio-addons/addon-zerotier/graphs/contributors
+[addon]: https://my.home-assistant.io/redirect/supervisor_addon/?addon=a0d7b954_nebula
+[api]: https://www.nebula.com/manual.shtml#4_1
+[contributors]: https://github.com/hassio-addons/addon-nebula/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord]: https://discord.me/hassioaddons
-[forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-zerotier-one/109091?u=frenck
+[forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-nebula-one/109091?u=frenck
 [frenck]: https://github.com/frenck
-[issue]: https://github.com/hassio-addons/addon-zerotier/issues
+[issue]: https://github.com/hassio-addons/addon-nebula/issues
 [reddit]: https://reddit.com/r/homeassistant
-[releases]: https://github.com/hassio-addons/addon-zerotier/releases
+[releases]: https://github.com/hassio-addons/addon-nebula/releases
 [repository-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
 [repository]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fhassio-addons%2Frepository
 [semver]: http://semver.org/spec/v2.0.0.htm
-[zerotier]: https://www.zerotier.com/
+[nebula]: https://www.nebula.com/

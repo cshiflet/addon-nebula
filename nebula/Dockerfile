@@ -8,29 +8,10 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 # hadolint ignore=DL3003
 RUN \
-    apk add --no-cache --virtual .build-dependencies \
-        build-base=0.5-r2 \
-        cargo=1.56.1-r0 \
-        git=2.34.1-r0 \
-        linux-headers=5.10.41-r0 \
-        openssl-dev=1.1.1l-r8 \
-        pkgconf=1.8.0-r0 \
-    \
-    && apk add --no-cache \
-        libgcc=10.3.1_git20211027-r0 \
-        libstdc++=10.3.1_git20211027-r0 \
-    \
-    && git clone --branch "1.8.5" --depth=1 \
-        "https://github.com/zerotier/ZeroTierOne.git" /tmp/zerotier \
-    \
-    && cd /tmp/zerotier \
-    && make \
-    && make install \
-    \
-    && apk del --no-cache --purge .build-dependencies \
-    && rm -f -r \
-        /root/.cargo \
-        /tmp/*
+    mkdir -p /etc/nebula && \
+    mkdir -p /opt/nebula && \
+    cd /opt/nebula && \
+    wget -O - https://github.com/slackhq/nebula/releases/download/v1.5.2/nebula-linux-${BUILD_ARCH}.tar.gz | tar -xzv
 
 # Copy root filesystem
 COPY rootfs /
@@ -51,11 +32,11 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Franck Nijhof <frenck@addons.community>" \
+    maintainer="Chris Shiflet <cshiflet@addons.community>" \
     org.opencontainers.image.title="${BUILD_NAME}" \
     org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
     org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
-    org.opencontainers.image.authors="Franck Nijhof <frenck@addons.community>" \
+    org.opencontainers.image.authors="Chris Shiflet <cshiflet@addons.community>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://addons.community" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \

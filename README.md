@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: ZeroTier One
+# Home Assistant Community Add-on: nebula
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -26,11 +26,11 @@ the same everywhere.
 
 ## About
 
-ZeroTier delivers the capabilities of VPNs, SDN, and SD-WAN with a single
+nebula delivers the capabilities of VPNs, SDN, and SD-WAN with a single
 system. Manage all your connected resources across both local and wide area
 networks as if the whole world is a single data center.
 
-People use ZeroTier to seamlessly connect laptops, desktops, phones,
+People use nebula to seamlessly connect laptops, desktops, phones,
 embedded devices, cloud resources, and apps any way they want anywhere they go.
 It transforms the entire world into a single data center, to which you
 can now add your Home Assistant instance using this add-on.
@@ -104,28 +104,28 @@ SOFTWARE.
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-zerotier.svg
-[commits]: https://github.com/hassio-addons/addon-zerotier/commits/main
-[contributors]: https://github.com/hassio-addons/addon-zerotier/graphs/contributors
+[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-nebula.svg
+[commits]: https://github.com/hassio-addons/addon-nebula/commits/main
+[contributors]: https://github.com/hassio-addons/addon-nebula/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/addon-zerotier/blob/main/zerotier/DOCS.md
+[docs]: https://github.com/hassio-addons/addon-nebula/blob/main/nebula/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
-[forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-zerotier-one/109091?u=frenck
-[frenck]: https://github.com/frenck
-[github-actions-shield]: https://github.com/hassio-addons/addon-zerotier/workflows/CI/badge.svg
-[github-actions]: https://github.com/hassio-addons/addon-zerotier/actions
+[forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-nebula/
+[cshiflet]: https://github.com/cshiflet
+[github-actions-shield]: https://github.com/hassio-addons/addon-nebula/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/addon-nebula/actions
 [github-sponsors-shield]: https://frenck.dev/wp-content/uploads/2019/12/github_sponsor.png
 [github-sponsors]: https://github.com/sponsors/frenck
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[issue]: https://github.com/hassio-addons/addon-zerotier/issues
-[license-shield]: https://img.shields.io/github/license/hassio-addons/addon-zerotier.svg
+[issue]: https://github.com/hassio-addons/addon-nebula/issues
+[license-shield]: https://img.shields.io/github/license/hassio-addons/addon-nebula.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
 [patreon]: https://www.patreon.com/frenck
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-zerotier.svg
+[releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-nebula.svg
 [releases]: https://github.com/hassio-addons/addon-zerotier/releases
 [repository]: https://github.com/hassio-addons/repository
